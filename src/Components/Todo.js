@@ -4,17 +4,25 @@ import '../css/Todo.css';
 import {useState} from 'react';
 
 export default function Todo(){
-    const [tasks,setTasks] = useState(Array(10).fill(null));
-    function handleSubmit(){
-        
+    const [tasks,setTasks] = useState(Array(10));
+    const [input,setInput] = useState("");
+    function handlechange(event){
+        setInput(event.target.value);
+    }
+    function handleSubmit(event){
+        const taskss = tasks.splice();
+        taskss.push(input);
+        setTasks(taskss)
+        event.preventDefault();
+        setInput("");
     }
     return(
         <div className='todo'>
             <div className='add-container'>
-                <Addtask handleSubmit = {handleSubmit}/>
+                <Addtask handlechange = {handlechange} handleSubmit={handleSubmit} input={input}/>
             </div>
             <div className='task-container'>
-                <Taskcontainer/>
+                <Taskcontainer tasks = {tasks}/>
             </div>
         
         </div>

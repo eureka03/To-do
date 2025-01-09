@@ -1,0 +1,15 @@
+form input{
+    width:400px;
+    margin-right:40px;
+    height:40px;
+}
+form button{
+    border:none;
+    background-color:blueviolet;
+    width:50px;
+    height:30px;
+}
+form{
+    width:500px;
+
+}

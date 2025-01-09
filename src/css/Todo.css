@@ -1,0 +1,10 @@
+.todo{
+    width:700px;
+    margin:50px auto;
+    height:700px;
+}
+.add-container{
+    width:600px;
+    display:flex;
+    margin:100px auto;
+}

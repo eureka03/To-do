@@ -6,6 +6,9 @@
     justify-content: space-between;
     background-color:lightgrey;
     border-radius: 5px;
+    margin-bottom:20px;
+    border-bottom:1px solid grey;
+    padding-left:20px;
 }
 .task-id h2{
     font-size:17px;

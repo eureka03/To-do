@@ -1,8 +1,8 @@
 import TaskList from './TaskList';
-export default function Taskcontainer({tasks}){
+export default function Taskcontainer({tasks,input}){
     return(
         <>
-        <TaskList tasks={tasks}/>
+        <TaskList tasks={tasks} input={input}/>
         
         </>
 

@@ -1,15 +1,16 @@
 import '../css/Task.css';
 import {useState} from 'react';
-export default function Task(){
+
+export default function Task({title,handleDelete,handleCommit}){
    
     return(
         <div className='task'>
             <div className='task-id'>
-                <h2>Task 1</h2>
+                <h2>{title}</h2>
             </div>
             <div className='update'>
-                <button>V</button>
-                <button>X</button>
+                <button onClick = {handleCommit}>V</button>
+                <button onClick = {handleDelete}>X</button>
             </div>
         </div>
     );
